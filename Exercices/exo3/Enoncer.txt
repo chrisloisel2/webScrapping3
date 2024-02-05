@@ -1,0 +1,24 @@
+Énoncé: http://quotes.toscrape.com/
+
+    Extraction des citations et des auteurs:
+        Visitez la première page du site et extrayez toutes les citations présentes sur cette page ainsi que les auteurs correspondants.
+        Affichez chaque citation avec son auteur dans la console.
+
+    Pagination:
+        Modifiez votre script pour qu'il navigue automatiquement à travers toutes les pages du site. À chaque page, extrayez toutes les citations et les auteurs, puis affichez-les.
+        Assurez-vous que votre script s'arrête correctement une fois qu'il a atteint la dernière page.
+
+    Extraction des tags associés à chaque citation:
+        Pour chaque citation extraite, récupérez également les tags associés et affichez-les avec la citation et l'auteur.
+
+    Recherche par auteur:
+        Ajoutez une fonctionnalité à votre script pour qu'il puisse accepter un nom d'auteur en entrée (via la ligne de commande ou une interface simple).
+        Le script doit ensuite trouver et afficher toutes les citations de cet auteur présentes sur le site. Incluez également les tags associés à chaque citation.
+
+    Extraction des détails de l'auteur:
+        Pour chaque auteur unique rencontré lors de l'extraction des citations, naviguez vers la page de détails de l'auteur et extrayez les informations suivantes : date de naissance, lieu de naissance et description brève.
+        Affichez ces informations avec les citations de l'auteur.
+
+    Gestion des erreurs et des exceptions:
+        Assurez-vous que votre script gère les cas où le site est inaccessible ou renvoie une erreur (par exemple, une erreur 404). Dans ces cas, le script doit afficher un message d'erreur approprié sans s'arrêter ou crasher.
+
