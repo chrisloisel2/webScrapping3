@@ -4,7 +4,7 @@ import requests
 # parser l'html
 
 
-response = requests.get("http://127.0.0.1:5500/webScrapping3/BS/test.html")
+# response = requests.get("http://127.0.0.1:5500/webScrapping3/BS/test.html")
 
 html = """
 <!DOCTYPE html>
@@ -22,13 +22,13 @@ html = """
 	<h1>This is a Heading</h1>
 	<h1 class="yolo">This is a paragraph.</h1>
 	<h1 id="yolo">This is another paragraph.</h1>
-	<a href="https://www.google.com">This is a link</a>
+	<a id="contenu de l'id"  href="https://www.google.com">This is a link</a>
 </body>
 </html>
 """
 
-soup = BeautifulSoup(response.content, "html.parser")
-# soup = BeautifulSoup(html, "html.parser")
+# soup = BeautifulSoup(response.content, "html.parser")
+soup = BeautifulSoup(html, "html.parser")
 
 
 # Recuperer la premiere balise h1
@@ -74,3 +74,18 @@ print(classYolo)
 
 idYolo = soup.find_all( id="yolo")
 print(idYolo)
+
+
+## Recuperer le texte d'une balise
+
+a = soup.find("a")
+print(a)
+print(a.text)
+print(a.get_text())
+
+## Recuperer les attributs d'une balise
+
+a = soup.find("a")
+print(a)
+print(a.attrs["href"])
+print(a.attrs["id"])
