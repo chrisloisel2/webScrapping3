@@ -4,7 +4,7 @@ import requests
 # parser l'html
 
 
-response = requests.get("https://fr.wikipedia.org/wiki/CNN")
+response = requests.get("http://127.0.0.1:5500/webScrapping3/BS/test.html")
 
 html = """
 <!DOCTYPE html>
@@ -27,12 +27,12 @@ html = """
 </html>
 """
 
-# soup = BeautifulSoup(response.content, "html.parser")
-soup = BeautifulSoup(html, "html.parser")
+soup = BeautifulSoup(response.content, "html.parser")
+# soup = BeautifulSoup(html, "html.parser")
 
 
 # Recuperer la premiere balise h1
-a = soup.find("a")
+a = soup.find("p")
 print(a)
 
 
