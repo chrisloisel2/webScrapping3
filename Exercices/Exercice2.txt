@@ -1,0 +1,8 @@
+Votre mission, si vous l'acceptez, est d'utiliser Beautiful Soup pour extraire les informations suivantes de ce document HTML :
+
+    Le titre de chaque section (<h2>).
+    Le résumé de chaque article dans la section "Les Articles".
+    Le nom de l'auteur pour chaque article.
+    La liste de tous les commentaires dans la section "Les Commentaires".
+    Les URLs des liens dans la section "Liens Externes".
+    L'adresse e-mail de contact dans le footer.
