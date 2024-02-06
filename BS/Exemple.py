@@ -83,7 +83,7 @@ print(a)
 print(a.text)
 print(a.get_text())
 
-## Recuperer les attributs d'une balise
+## Recuperer les attributs d' balise
 
 a = soup.find("a")
 print(a)
