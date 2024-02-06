@@ -1,0 +1,16 @@
+Navigation et extraction des données :
+
+    Utilisez Selenium pour naviguer jusqu'à la page des indices boursiers sur Boursorama https://www.boursorama.com/bourse/.
+    Identifiez les éléments HTML contenant les informations suivantes :
+        Les noms des indices boursiers principaux.
+        La valeur actuelle de chaque indice.
+        La variation en pourcentage de chaque indice
+	    La variation depuis le début de l'année en pourcentage de chaque indice
+		La valeur la plus haute de chaque indice depuis le début de l'année
+		La valeur la plus basse de chaque indice depuis le début de l'année
+	Faite une capture d'écran de la page web de chaque indice et sauvegardez-la dans un dossier nommé "screenshots".
+	Utilisez Selenium pour extraire les informations identifiées précédemment.
+	Affichez les informations extraites dans la console.
+Sauvegarde des données :
+
+    Sauvegardez les données extraites dans un fichier CSV en veillant à nommer correctement les colonnes.
