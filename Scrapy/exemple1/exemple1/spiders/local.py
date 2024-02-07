@@ -8,8 +8,22 @@ class LocalSpider(scrapy.Spider):
 
     def parse(self, response):
 
-        print(response.text)
-        print("----------------------------")
-        print("Bonjour")
-        print("----------------------------")
+        res = response.css("div#footer > ul > li > a::attr('alt')").extract()
+        print(res)
+
+        res = response.css("div#footer > ul > li > a::text").extract()
+        print(res)
+
+
+        res = response.css("div#footer > ul > li > a::attr('alt')").extract()
+        print(res)
+
+        xres = response.xpath("//div[@id='footer']/ul/li/a/text()").extract()
+        print(xres)
+
+        xres = response.xpath("//div[@id='footer']/ul/li/a/@alt").extract()
+        print(xres)
+
+        xres = response.xpath("//div[@id='footer']/ul/li/a/@name").extract_first()
+        print(xres)
         pass
