@@ -1,0 +1,27 @@
+Objectif du TP : Extraction des données de recettes d'apéritifs
+
+Partie 1 : Collecte des URLs avec Selenium
+
+Votre première tâche consiste à utiliser Selenium pour naviguer sur la page des recettes d'apéritifs à l'adresse suivante : https://www.cuisineaz.com/categories/aperitif-cat48640. L'objectif est de récupérer les URLs de chaque recette listée sur cette page.
+
+Instructions :
+
+    Utilisez Selenium pour ouvrir et parcourir la page indiquée.
+    Localisez les éléments HTML qui contiennent les URLs des recettes.
+    Extrayez et stockez ces URLs dans une liste pour la deuxième partie du TP.
+
+Partie 2 : Extraction de données avec Scrapy
+
+Après avoir collecté les URLs des recettes, vous passerez à l'extraction des informations spécifiques de chaque recette en utilisant Scrapy.
+
+Données à extraire pour chaque recette :
+
+    Ingrédients
+    Étapes de préparation
+    Astuces de cuisine (si disponibles)
+
+Instructions :
+
+    Utilisez Scrapy pour naviguer vers chaque URL récupérée lors de la première partie.
+    Identifiez et extrayez les informations requises (ingrédients, étapes de préparation, et astuces) de chaque page de recette.
+    Stockez ces informations de manière structurée pour une utilisation ou une analyse ultérieure.
