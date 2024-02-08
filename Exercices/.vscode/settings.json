@@ -5,7 +5,14 @@
 		"**/.hg": true,
 		"**/CVS": true,
 		"**/.DS_Store": true,
-		"**/Thumbs.db": true
+		"**/Thumbs.db": true,
+		"exo5/cheval/cheval/spiders/__init__.py": true,
+		"exo5/cheval/cheval/spiders/__pycache__": true,
+		"exo5/cheval/cheval/__init__.py": true
 	},
-	"hide-files.files": []
+	"hide-files.files": [
+		"exo5/cheval/cheval/spiders/__init__.py",
+		"exo5/cheval/cheval/spiders/__pycache__",
+		"exo5/cheval/cheval/__init__.py"
+	]
 }
